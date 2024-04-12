@@ -1,6 +1,6 @@
 # SpringBootBlogger
 
-Welcome to the repository for SpringBootBlogger, a robust Spring Boot-based web application designed for blogging aficionados. This application serves as a platform for creating, reading, updating, and deleting insightful blog posts with ease. Dive into our engaging categories, share your thoughts via comments, and experience seamless navigation with our intuitive pagination and sorting features.
+Welcome to the repository for SpringBootBlogger, a robust Spring Boot-based web application designed for blogging aficionados. This application serves as a platform for creating, reading, updating, and deleting insightful blog posts with ease. Dive into the engaging categories, share your thoughts via comments, and experience seamless navigation with our intuitive pagination and sorting features.
 
 ## Features
 
