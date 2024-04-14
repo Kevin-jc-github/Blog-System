@@ -33,7 +33,7 @@ Welcome to the repository for SpringBootBlogger, a robust Spring Boot-based web 
 
 ## Technology Stack
 
-- **Java Platform**: Java 17+
+- **Java Platform**: Java 22
 - **Java Frameworks**: Utilizing the power of Spring Framework, including Spring Boot, Spring Security, and Spring Data JPA.
 - **Authentication**: JWT (JSON Web Token) for secure token-based authentication.
 - **Build Tool**: Maven for dependable project management.
