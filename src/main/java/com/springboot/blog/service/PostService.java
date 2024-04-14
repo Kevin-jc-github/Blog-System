@@ -16,4 +16,9 @@ public interface PostService {
     PostDto updatePost(PostDto postDto, Long id);
 
     void DeletePostById(Long id);
+<<<<<<< HEAD
+=======
+
+    List<PostDto> getPostsByCategory(Long categoryId);
+>>>>>>> 5f653ff (update with JWT function)
 }

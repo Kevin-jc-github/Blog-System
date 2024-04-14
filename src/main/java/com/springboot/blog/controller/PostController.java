@@ -65,5 +65,16 @@ public class PostController {
         return new ResponseEntity<>("Post entity deleted success", HttpStatus.OK);
     }
 
+<<<<<<< HEAD
+=======
+    //Build Get Posts by category REST API
+    //http://localhost:8080/api/posts/category/3
+    @GetMapping("/category/{id}")
+    public ResponseEntity<List<PostDto>> getPostsByCategory(@PathVariable("id") Long categoryId){
+        List<PostDto> postDtos = postService.getPostsByCategory(categoryId);
+        return ResponseEntity.ok(postDtos);
+    }
+
+>>>>>>> 5f653ff (update with JWT function)
 
 }

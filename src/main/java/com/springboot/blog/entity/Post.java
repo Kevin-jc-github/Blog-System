@@ -31,4 +31,11 @@ public class Post {
 
     @OneToMany(mappedBy = "post", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Comment> comment = new HashSet<>();
+<<<<<<< HEAD
+=======
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_id")
+    private Category category;
+>>>>>>> 5f653ff (update with JWT function)
 }

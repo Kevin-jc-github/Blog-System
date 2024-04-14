@@ -20,4 +20,10 @@ public class PostDto {
     @NotEmpty
     private String content;
     private Set<CommentDto> comments;
+<<<<<<< HEAD
+=======
+
+    private Long categoryId;
+
+>>>>>>> 5f653ff (update with JWT function)
 }
