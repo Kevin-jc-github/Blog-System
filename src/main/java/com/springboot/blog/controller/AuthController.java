@@ -1,9 +1,13 @@
 package com.springboot.blog.controller;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import com.springboot.blog.dto.JWTAuthResponse;
 >>>>>>> 5f653ff (update with JWT function)
+=======
+import com.springboot.blog.dto.JWTAuthResponse;
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
 import com.springboot.blog.dto.LoginDto;
 import com.springboot.blog.dto.RegisterDto;
 import com.springboot.blog.service.AuthService;
@@ -15,7 +19,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+<<<<<<< HEAD
 @RequestMapping("/api/auth")
+=======
+@RequestMapping("/api/v1/auth")
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
 public class AuthController {
 
     private AuthService authService;
@@ -27,10 +35,13 @@ public class AuthController {
     //Build Login REST API
     @PostMapping(value = {"/login", "/signin"})
 <<<<<<< HEAD
+<<<<<<< HEAD
     public ResponseEntity<String> login(@RequestBody LoginDto loginDto){
         String response = authService.login(loginDto);
         return ResponseEntity.ok(response);
 =======
+=======
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
     public ResponseEntity<JWTAuthResponse> login(@RequestBody LoginDto loginDto){
         String token = authService.login(loginDto);
 
@@ -38,7 +49,10 @@ public class AuthController {
         jwtAuthResponse.setAccessToken(token);
 
         return ResponseEntity.ok(jwtAuthResponse);
+<<<<<<< HEAD
 >>>>>>> 5f653ff (update with JWT function)
+=======
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
     }
 
     //Build Register REST API

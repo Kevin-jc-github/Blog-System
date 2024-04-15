@@ -3,14 +3,20 @@ package com.springboot.blog.service.impl;
 import com.springboot.blog.dto.PostDto;
 import com.springboot.blog.dto.PostResponse;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.springboot.blog.entity.Post;
 import com.springboot.blog.exception.ResourceNotFoundException;
 =======
+=======
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
 import com.springboot.blog.entity.Category;
 import com.springboot.blog.entity.Post;
 import com.springboot.blog.exception.ResourceNotFoundException;
 import com.springboot.blog.repository.CategoryRepository;
+<<<<<<< HEAD
 >>>>>>> 5f653ff (update with JWT function)
+=======
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
 import com.springboot.blog.repository.PostRepository;
 import com.springboot.blog.service.PostService;
 import org.modelmapper.ModelMapper;
@@ -31,11 +37,14 @@ public class PostServiceImpl implements PostService {
     private ModelMapper mapper;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     public PostServiceImpl(PostRepository postRepository, ModelMapper mapper) {
         this.postRepository = postRepository;
         this.mapper = mapper;
 =======
+=======
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
     private CategoryRepository categoryRepository;
 
 
@@ -47,23 +56,32 @@ public class PostServiceImpl implements PostService {
         this.mapper = mapper;
         this.categoryRepository = categoryRepository;
 
+<<<<<<< HEAD
 >>>>>>> 5f653ff (update with JWT function)
+=======
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
     }
 
     @Override
     public PostDto createPost(PostDto postDto) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         //convert DTO to entity
         Post post = MapToEntity(postDto);
 =======
+=======
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
         Category category = categoryRepository.findById(postDto.getCategoryId())
                 .orElseThrow(() -> new ResourceNotFoundException("Category", "id", postDto.getCategoryId()));
 
         //convert DTO to entity
         Post post = MapToEntity(postDto);
         post.setCategory(category);
+<<<<<<< HEAD
 >>>>>>> 5f653ff (update with JWT function)
+=======
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
         Post newPost = postRepository.save(post);
 
         //convert entity to Dto
@@ -107,10 +125,13 @@ public class PostServiceImpl implements PostService {
         Post post = postRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Post","id",id));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         post.setTitle(postDto.getTitle());
         post.setDescription(postDto.getDescription());
         post.setContent(postDto.getContent());
 =======
+=======
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
         Category category = categoryRepository.findById(postDto.getCategoryId())
                         .orElseThrow(() -> new ResourceNotFoundException("Category","id", postDto.getCategoryId()));
 
@@ -118,7 +139,10 @@ public class PostServiceImpl implements PostService {
         post.setDescription(postDto.getDescription());
         post.setContent(postDto.getContent());
         post.setCategory(category);
+<<<<<<< HEAD
 >>>>>>> 5f653ff (update with JWT function)
+=======
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
 
         Post updatedPost = postRepository.save(post);
         return MapToDTO(updatedPost);
@@ -131,7 +155,10 @@ public class PostServiceImpl implements PostService {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
     @Override
     public List<PostDto> getPostsByCategory(Long categoryId) {
 
@@ -144,7 +171,10 @@ public class PostServiceImpl implements PostService {
                 .collect(Collectors.toList());
     }
 
+<<<<<<< HEAD
 >>>>>>> 5f653ff (update with JWT function)
+=======
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
     //convert entity to DTO
     private PostDto MapToDTO(Post post){
         PostDto postDto = mapper.map(post,PostDto.class);

@@ -11,7 +11,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+<<<<<<< HEAD
 @RequestMapping("/api/")
+=======
+@RequestMapping("/api/v1")
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
 public class CommentController {
 
     private CommentService commentService;

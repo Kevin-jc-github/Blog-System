@@ -8,9 +8,13 @@ import com.springboot.blog.exception.BlogAPIException;
 import com.springboot.blog.repository.RoleRepository;
 import com.springboot.blog.repository.UserRepository;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import com.springboot.blog.security.JwtTokenProvider;
 >>>>>>> 5f653ff (update with JWT function)
+=======
+import com.springboot.blog.security.JwtTokenProvider;
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
 import com.springboot.blog.service.AuthService;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -31,29 +35,42 @@ public class AuthServiceImpl implements AuthService {
     private RoleRepository roleRepository;
     private PasswordEncoder passwordEncoder;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     private JwtTokenProvider jwtTokenProvider;
 >>>>>>> 5f653ff (update with JWT function)
+=======
+    private JwtTokenProvider jwtTokenProvider;
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
 
     public AuthServiceImpl(AuthenticationManager authenticationManager,
                            UserRepository userRepository,
                            RoleRepository roleRepository,
+<<<<<<< HEAD
 <<<<<<< HEAD
                            PasswordEncoder passwordEncoder) {
 =======
                            PasswordEncoder passwordEncoder,
                            JwtTokenProvider jwtTokenProvider) {
 >>>>>>> 5f653ff (update with JWT function)
+=======
+                           PasswordEncoder passwordEncoder,
+                           JwtTokenProvider jwtTokenProvider) {
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
 
         this.authenticationManager = authenticationManager;
         this.userRepository = userRepository;
         this.roleRepository = roleRepository;
         this.passwordEncoder = passwordEncoder;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         this.jwtTokenProvider = jwtTokenProvider;
 >>>>>>> 5f653ff (update with JWT function)
+=======
+        this.jwtTokenProvider = jwtTokenProvider;
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
     }
 
     @Override
@@ -65,12 +82,18 @@ public class AuthServiceImpl implements AuthService {
         SecurityContextHolder.getContext().setAuthentication(authentication);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return "User Logged-in successfully!.";
 =======
         String token = jwtTokenProvider.generateToken(authentication);
 
         return token;
 >>>>>>> 5f653ff (update with JWT function)
+=======
+        String token = jwtTokenProvider.generateToken(authentication);
+
+        return token;
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
     }
 
     @Override

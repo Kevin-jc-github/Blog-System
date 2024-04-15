@@ -32,10 +32,16 @@ public class Post {
     @OneToMany(mappedBy = "post", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Comment> comment = new HashSet<>();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id")
     private Category category;
+<<<<<<< HEAD
 >>>>>>> 5f653ff (update with JWT function)
+=======
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
 }

@@ -17,8 +17,13 @@ public interface PostService {
 
     void DeletePostById(Long id);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
     List<PostDto> getPostsByCategory(Long categoryId);
 >>>>>>> 5f653ff (update with JWT function)
+=======
+
+    List<PostDto> getPostsByCategory(Long categoryId);
+>>>>>>> 57fc075 (Add Springboot Swagger-UI and place this project to AWS CLOUD)
 }
